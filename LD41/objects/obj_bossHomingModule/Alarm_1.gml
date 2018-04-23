@@ -9,7 +9,7 @@ for(i = 0; i < 3 + _level; i++)
 {
 	bull = instance_create_layer(x, y, "BossBulletlevel", obj_bossHomingBullet);
 	bull._level = _level;
-	bull.direction = image_angle + 90 + i*90
+	bull.direction = image_angle + 90 + i*90;
 	bull._delay = i*(7 - _level);
 }
 }

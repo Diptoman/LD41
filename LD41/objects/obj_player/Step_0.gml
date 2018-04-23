@@ -8,6 +8,8 @@ var keyDown = keyboard_check(vk_down) || keyboard_check(ord("S"));
 var fire = keyboard_check(ord("Z")) || keyboard_check(ord("J"));
 var xMovement = 0, yMovement = 0;
 
+_movementSpeedModifier = obj_controller._speedModifier;
+
 if (_controllable)
 {
 	
@@ -57,7 +59,7 @@ if (_controllable)
 				var inst = instance_create_layer(x, y, "Bullets", obj_bulletSpawner);
 				inst._level = item._level;
 				inst._bulletObj = item._bulletObj;
-				alarm[i] = item._fireRate;
+				alarm[i] = item._fireRate / obj_controller._fireRateModifier;
 			}
 		}
 	}

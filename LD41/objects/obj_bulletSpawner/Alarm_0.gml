@@ -9,12 +9,26 @@ switch(_bulletObj)
 		break;
 		
 	case obj_sonic:
-		for(i = 0; i < 3 + floor(_level / 2); i++)
+		for(i = 0; i < 1 + _level*2; i++)
 		{
 			inst = instance_create_layer(x, y, "Bullets", _bulletObj);
-			inst.direction = 90 - 5 + ((10 / (2 + floor(_level / 2))) * i);
+			inst.direction = 90 - 5 * _level + 5 * i;
 			inst._level = _level;
 		}
+		break;
+		
+	case obj_homing:
+		for(i = 0; i < _level; i++)
+		{
+			inst = instance_create_layer(x, y, "Bullets", _bulletObj);
+			inst.direction = 90 - (_level - 1) * 15 + 30 * i;
+			inst._level = _level;
+		}
+		break;
+		
+	case obj_bomber:
+		inst = instance_create_layer(x, y, "Bullets", _bulletObj);
+		inst._level = _level;
 		break;
 }
 

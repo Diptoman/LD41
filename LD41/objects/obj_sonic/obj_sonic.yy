@@ -43,7 +43,7 @@
             "mvc": "1.0",
             "objectId": "2b9da617-4d02-47dc-a5e5-7f92649ecad9",
             "propertyId": "24d9e700-f00c-4235-bb32-77d371e3b2f5",
-            "value": "3"
+            "value": "5"
         },
         {
             "id": "469a15f9-2f60-4bdc-8670-d7e7d8ff6972",
@@ -70,6 +70,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "3a3646f2-15f5-41f1-b7ab-26ac1f0885d2",
+    "spriteId": "27934c27-7c6f-4a5b-9d72-d1627bdfcfff",
     "visible": true
 }

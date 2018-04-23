@@ -18,3 +18,5 @@ for(i = 0; i < deck_size(_selectedDeck); i++)
 	
 	ds_list_add(_selectedCards, inst);
 }
+
+_isActive = true;

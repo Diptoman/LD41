@@ -15,6 +15,8 @@ card._destinationX = 96 + 128*deck_size(obj_selectionController._hand);
 card._index = deck_size(obj_selectionController._hand) - 1;
 card._delay = 0;
 
+with (card) event_perform(ev_other, ev_user0);
+
 //Remove cardHold
 if (cardHold != -1)
 {

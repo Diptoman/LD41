@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+event_inherited();
 
 finalX = x + lengthdir_x(64, direction);
 finalY = y + lengthdir_y(64, direction);

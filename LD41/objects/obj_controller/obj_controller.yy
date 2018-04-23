@@ -63,6 +63,16 @@
             "enumb": 12,
             "eventtype": 7,
             "m_owner": "9ee74e26-edaa-4116-9705-eacf0702f7e2"
+        },
+        {
+            "id": "90ebcfe1-784e-4731-90a6-579884c43496",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 13,
+            "eventtype": 7,
+            "m_owner": "9ee74e26-edaa-4116-9705-eacf0702f7e2"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -106,7 +116,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "12",
+            "value": "1",
             "varName": "_round",
             "varType": 1
         },
@@ -164,6 +174,48 @@
             "resourceFilter": 1023,
             "value": "1",
             "varName": "_bossFiringRate",
+            "varType": 0
+        },
+        {
+            "id": "f8ccb586-bdc8-422e-9910-964e31b51035",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "_fireRateModifier",
+            "varType": 0
+        },
+        {
+            "id": "ebe9d97a-dc93-44e5-905f-f78f7ae7dfc4",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "_speedModifier",
+            "varType": 0
+        },
+        {
+            "id": "8205a9c4-cd2c-4e11-a605-de5ae072dd84",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "_score",
             "varType": 1
         }
     ],

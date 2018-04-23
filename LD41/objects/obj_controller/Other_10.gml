@@ -7,7 +7,7 @@ with (obj_leftSideUI) event_perform(ev_other, ev_user0);
 
 instance_create_layer(room_width/2, room_height + 64, "PlayerLevel", obj_player);
 
-_timer = room_speed * 30 + min(_round, 30) * room_speed;
+_timer = max(room_speed * 30 + min(_round, 30) * room_speed, 60);
 
 //Attach weapons
 for(i = 0; i < deck_size(_playerEquippedDeck); i++)
@@ -84,6 +84,36 @@ for(i = 0; i < deck_size(_playerEquippedDeck); i++)
 	}
 }
 
+_firerateModifier = 1;
+_speedModifier = 1;
+_bossFiringRate = 1;
+
 //Boss HP
 _maxBossHP = 450 + min(_round*25, 300);
 _bossHP = _maxBossHP;
+
+//Attach effects
+for(i = 0; i < deck_size(_playerEquippedDeck); i++)
+{
+	card = return_nth_card_in_deck(_playerEquippedDeck, i);
+	bull = -1;
+	switch(card)
+	{
+		case cards.FireRate1:
+			_fireRateModifier += 1; break;
+		case cards.Speed1:
+			_speedModifier += 1; break;
+		case cards.SlowRate1:
+			_bossFiringRate *= .75; break;
+		case cards.PlusTime1:
+			_timer += 15 * room_speed; break;
+		case cards.MinusTime1:
+			_timer -= 15 * room_speed; break;
+		case cards.Sabotage:
+			_bossHP -= .4 * _maxBossHP;
+	}
+}
+
+if (_timer < 0)
+	_timer = 60;
+

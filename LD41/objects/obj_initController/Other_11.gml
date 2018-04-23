@@ -21,3 +21,5 @@ sel._deck = _selectedDeck;
 instance_create_layer(0, 0, "ControllerInstances", obj_endRoundController);
 
 instance_destroy();
+
+_isActive = false;

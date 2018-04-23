@@ -64,20 +64,21 @@ enum cards
 	MinusTime1,
 	MinusTime2,
 	MinusTime3,
+	Sabotage
 }
 
 //Create 4 pre-built decks
 _deck1 = instance_create_layer(0, 0, "ControllerInstances", obj_deck);
+add_card_to_deck(_deck1, cards.Bomber1);
+add_card_to_deck(_deck1, cards.Homing1);
+add_card_to_deck(_deck1, cards.Homing1);
 add_card_to_deck(_deck1, cards.Blaster1);
 add_card_to_deck(_deck1, cards.Sonic1);
-add_card_to_deck(_deck1, cards.Blaster1);
 add_card_to_deck(_deck1, cards.Sonic1);
-add_card_to_deck(_deck1, cards.Blaster1);
-add_card_to_deck(_deck1, cards.Sonic1);
-add_card_to_deck(_deck1, cards.Blaster1);
-add_card_to_deck(_deck1, cards.Sonic1);
-add_card_to_deck(_deck1, cards.Blaster1);
-add_card_to_deck(_deck1, cards.Sonic1);
+add_card_to_deck(_deck1, cards.PlusTime1);
+add_card_to_deck(_deck1, cards.Speed1);
+add_card_to_deck(_deck1, cards.FireRate1);
+add_card_to_deck(_deck1, cards.SlowRate1);
 
 _deck2 = instance_create_layer(0, 0, "ControllerInstances", obj_deck);
 add_card_to_deck(_deck2, cards.Sonic1);
@@ -116,15 +117,20 @@ add_card_to_deck(_deck4, cards.Blaster1);
 add_card_to_deck(_deck4, cards.Sonic1);
 
 //Create deck selects
-inst = instance_create_layer(room_width / 2 - 400, room_height / 2 - 100, "TopLevelUI", obj_deckSelectDeck);
+
+inst = instance_create_layer(room_width / 2 - 560, room_height / 2 - 100, "TopLevelUI", obj_deckSelectDeck);
 inst._deck = _deck1;
 inst.image_index = 1;
-inst = instance_create_layer(room_width / 2 - 200, room_height / 2 - 100, "TopLevelUI", obj_deckSelectDeck);
+inst._deckName = "Aggressive";
+inst = instance_create_layer(room_width / 2 - 340, room_height / 2 - 100, "TopLevelUI", obj_deckSelectDeck);
 inst._deck = _deck2;
-inst = instance_create_layer(room_width / 2 - 400, room_height / 2 + 50, "TopLevelUI", obj_deckSelectDeck);
+inst._deckName = "Passive";
+inst = instance_create_layer(room_width / 2 - 120, room_height / 2 - 100, "TopLevelUI", obj_deckSelectDeck);
 inst._deck = _deck3;
-inst = instance_create_layer(room_width / 2 - 200, room_height / 2 + 50, "TopLevelUI", obj_deckSelectDeck);
+inst._deckName = "Passive#Aggressive";
+inst = instance_create_layer(room_width / 2 + 100, room_height / 2 - 100, "TopLevelUI", obj_deckSelectDeck);
 inst._deck = _deck4;
+inst._deckName = "Balanced";
 
 //Other vars
 _selectedDeck = _deck1;

@@ -3,7 +3,7 @@
 
 image_xscale = .5;
 image_yscale = .5;
-
+image_speed = 0;
 y -= 48;
 
 TweenFire(id, EaseOutQuad, 0, 1, 0, .25, x__, x, room_width / 2 + 548);

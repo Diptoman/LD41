@@ -85,6 +85,8 @@ switch(argument0)
 		sprite_index = spr_card_counter; image_index = 1; break;
 	case cards.Counter3:
 		sprite_index = spr_card_counter; image_index = 2; break;
+	case cards.Sabotage:
+		sprite_index = spr_card_sabotage; image_index = 0; break;
 	case cards.SlowSpeed1:
 		sprite_index = spr_card_slowspeed; image_index = 0; break;
 	case cards.SlowSpeed2:

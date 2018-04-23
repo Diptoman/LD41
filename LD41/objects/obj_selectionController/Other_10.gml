@@ -26,6 +26,8 @@ decide_boss_config(obj_controller._round);
 for(i = 0; i < deck_size(_bossDeck); i++)
 {
 	inst = instance_create_layer(room_width/2 - 150 + (i mod 4)*100, -128, "TopLevelUI", obj_roundStartBossCard);
-	inst._destinationY = 240 + floor(i/4) * 100;
+	inst._destinationY = 280 + floor(i/4) * 100;
 	inst._card = return_nth_card_in_deck(_bossDeck, i);
 }
+
+_isActive = true;
