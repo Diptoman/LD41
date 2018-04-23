@@ -5,7 +5,7 @@
     "name": "spr_bossHoming",
     "For3D": false,
     "HTile": false,
-    "VTile": false,
+    "VTile": true,
     "bbox_bottom": 59,
     "bbox_left": 6,
     "bbox_right": 58,
