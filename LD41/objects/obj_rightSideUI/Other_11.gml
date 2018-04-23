@@ -3,8 +3,8 @@
 
 TweenFire(id, EaseOutQuad, 0, 1, 0, .25, x__, x, room_width + 367);
 
-for (i = 0; i < instance_number(obj_inGameCard); i++)
+while(instance_number(obj_inGameCard) > 0)
 {
-	card = instance_find(obj_inGameCard, i);
+	card = instance_find(obj_inGameCard, 0);
 	with (card) instance_destroy();
 }

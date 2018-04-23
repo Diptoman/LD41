@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-_rightBoundaryX = room_width/2 + 320;
-_leftBoundaryX = room_width/2 - 320;
+_rightBoundaryX = room_width/2 + 300;
+_leftBoundaryX = room_width/2 - 300;
 
 //Used decks
 _playerEquippedDeck = instance_create_layer(0, 0, "ControllerInstances", obj_deck);

@@ -7,3 +7,6 @@ with (obj_rightSideUI) event_perform(ev_other, ev_user1);
 with (obj_leftSideUI) event_perform(ev_other, ev_user1);
 
 with (obj_player) instance_destroy();
+
+ds_list_clear(_weapons);
+clear_deck(_playerEquippedDeck);
