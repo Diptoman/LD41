@@ -106,7 +106,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
+            "value": "12",
             "varName": "_round",
             "varType": 1
         },
@@ -136,6 +136,34 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "_maxBossHP",
+            "varType": 1
+        },
+        {
+            "id": "e9b49ab2-f30e-4bd5-a34b-cc81aeb4c9a3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "_bossSpeed",
+            "varType": 1
+        },
+        {
+            "id": "479fd441-1def-457c-b695-d7cd03caa6ee",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "_bossFiringRate",
             "varType": 1
         }
     ],

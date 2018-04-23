@@ -21,14 +21,7 @@ instance_create_layer(room_width/2, 100, "BossLevel", obj_boss);
 //Define boss
 //test
 clear_deck(_bossDeck);
-add_card_to_deck(_bossDeck, cards.Blaster1);
-add_card_to_deck(_bossDeck, cards.Blaster1);
-add_card_to_deck(_bossDeck, cards.Blaster1);
-add_card_to_deck(_bossDeck, cards.Blaster1);
-add_card_to_deck(_bossDeck, cards.Blaster1);
-add_card_to_deck(_bossDeck, cards.Blaster1);
-add_card_to_deck(_bossDeck, cards.Blaster1);
-add_card_to_deck(_bossDeck, cards.Blaster1);
+decide_boss_config(obj_controller._round);
 
 for(i = 0; i < deck_size(_bossDeck); i++)
 {

@@ -7,7 +7,7 @@ with (obj_leftSideUI) event_perform(ev_other, ev_user0);
 
 instance_create_layer(room_width/2, room_height + 64, "PlayerLevel", obj_player);
 
-_timer = room_speed * 20;
+_timer = room_speed * 30 + min(_round, 30) * room_speed;
 
 //Attach weapons
 for(i = 0; i < deck_size(_playerEquippedDeck); i++)
@@ -85,5 +85,5 @@ for(i = 0; i < deck_size(_playerEquippedDeck); i++)
 }
 
 //Boss HP
-_maxBossHP = 450 + _round*50;
+_maxBossHP = 450 + min(_round*25, 300);
 _bossHP = _maxBossHP;

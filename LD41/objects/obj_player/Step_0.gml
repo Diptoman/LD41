@@ -86,5 +86,5 @@ else if (xMovement == 0)
 if ((x + xMovement) < (obj_controller._rightBoundaryX)) && ((x + xMovement) > (obj_controller._leftBoundaryX))
 	x += xMovement;
 	
-if (((y + yMovement) < (room_height - sprite_get_height(sprite_index)/2)) && ((y + yMovement) > sprite_get_height(sprite_index)/2))
+if (((y + yMovement) < (room_height - 28)) && ((y + yMovement) > 28))
 	y += yMovement;

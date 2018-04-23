@@ -15,9 +15,9 @@ for(i = 0; i < instance_number(obj_deckSelectDeck); i++)
 
 with (obj_selectDeckOk) instance_destroy();
 
+instance_create_layer(0, 0, "ControllerInstances", obj_controller);
 sel = instance_create_layer(0, 0, "ControllerInstances", obj_selectionController);
 sel._deck = _selectedDeck;
-instance_create_layer(0, 0, "ControllerInstances", obj_controller);
 instance_create_layer(0, 0, "ControllerInstances", obj_endRoundController);
 
 instance_destroy();
