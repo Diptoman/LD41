@@ -3,6 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
-_card = cards.Blaster;
 
 alarm[1] = 1;
+
+_clickable = false;

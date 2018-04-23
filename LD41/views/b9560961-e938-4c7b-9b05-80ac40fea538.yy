@@ -10,7 +10,8 @@
         "0d0d0905-9c48-4271-8d5f-375eef529e03",
         "7e07b6b6-987c-4b65-8904-3551121c23fd",
         "e5339f9e-3fe0-4813-878f-698ae59d9cba",
-        "6a5f5413-05cf-4ece-a019-e8fbff43fe89"
+        "6a5f5413-05cf-4ece-a019-e8fbff43fe89",
+        "e28820f8-3760-49be-aee6-9b503433bf95"
     ],
     "filterType": "GMScript",
     "folderName": "Decks",

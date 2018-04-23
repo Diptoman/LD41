@@ -18,5 +18,6 @@ with (obj_selectDeckOk) instance_destroy();
 sel = instance_create_layer(0, 0, "ControllerInstances", obj_selectionController);
 sel._deck = _selectedDeck;
 instance_create_layer(0, 0, "ControllerInstances", obj_controller);
+instance_create_layer(0, 0, "ControllerInstances", obj_endRoundController);
 
 instance_destroy();

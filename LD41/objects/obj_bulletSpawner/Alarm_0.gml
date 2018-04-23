@@ -12,8 +12,8 @@ switch(_bulletObj)
 		for(i = 0; i < 3 + floor(_level / 2); i++)
 		{
 			inst = instance_create_layer(x, y, "Bullets", _bulletObj);
-			inst.direction = 90 - 10 + ((20 / (3 + floor(_level / 2))) * i);
-			//inst._level = _level;
+			inst.direction = 90 - 5 + ((10 / (2 + floor(_level / 2))) * i);
+			inst._level = _level;
 		}
 		break;
 }

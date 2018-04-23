@@ -1,8 +1,6 @@
 /// @description Draw cards
 // You can write your code in this editor
 
-instance_create_layer(room_width - 96, 96, "TopLevelUI", obj_startRoundOk);
-
 //Add any cards in equipped back into main deck
 while(deck_size(_equipped) > 0)
 {
@@ -12,27 +10,36 @@ while(deck_size(_equipped) > 0)
 //Draw
 shuffle_deck(_deck);
 
-if (_round == 1)
+if (obj_controller._round == 1)
 {
 	for(i = 0; i < 5; i++)
 	{
-		card = instance_create_layer(96, 640, "TopLevelUI", obj_roundStartCard);
+		card = instance_create_layer(96, 574, "TopLevelUI", obj_roundStartCard);
 		card._card = remove_top_card_from_deck(_deck);
 		add_card_to_deck(_hand, card._card);
 		card._delay = 4 - i;
 		card._destinationX = 96 + 128*deck_size(_hand);
 		card._index = deck_size(_hand) - 1;
+		
+		with (card) event_perform(ev_other, ev_user0);
 	}
+	alarm[2] += 60;
 }
 else
 {
-	for(i = 0; i < 2; i++)
+	if (deck_size(_hand) < 8)
 	{
-		card = instance_create_layer(96, 640, "TopLevelUI", obj_roundStartCard);
-		card._card = remove_top_card_from_deck(_deck);
-		add_card_to_deck(_hand, card._card);
-		card._delay = 4 - i;
-		card._destinationX = 96 + 128*deck_size(_hand);
-		card._index = deck_size(_hand) - 1;
+		for(i = 0; i < 1; i++)
+		{
+			card = instance_create_layer(96, 574, "TopLevelUI", obj_roundStartCard);
+			card._card = remove_top_card_from_deck(_deck);
+			add_card_to_deck(_hand, card._card);
+			card._delay = 1 - i;
+			card._destinationX = 96 + 128*deck_size(_hand);
+			card._index = deck_size(_hand) - 1;
+		
+			with (card) event_perform(ev_other, ev_user0);
+		}
+		alarm[2] += 0;
 	}
 }

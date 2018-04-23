@@ -5,6 +5,8 @@
 // You can write your code in this editor
 
 //Create equipped
+if (_clickable == true)
+{
 card = instance_create_layer(x, y, "TopLevelUI", obj_roundStartCard);
 card._card = _card;
 add_card_to_deck(obj_selectionController._hand, _card);
@@ -32,3 +34,4 @@ for(j = 0; j < instance_number(obj_roundStartEquippedCard); j++)
 }
 
 instance_destroy();
+}
