@@ -81,40 +81,41 @@ add_card_to_deck(_deck1, cards.FireRate1);
 add_card_to_deck(_deck1, cards.SlowRate1);
 
 _deck2 = instance_create_layer(0, 0, "ControllerInstances", obj_deck);
+add_card_to_deck(_deck2, cards.Bomber1);
+add_card_to_deck(_deck2, cards.Homing1);
+add_card_to_deck(_deck2, cards.Blaster1);
 add_card_to_deck(_deck2, cards.Sonic1);
-add_card_to_deck(_deck2, cards.Sonic1);
-add_card_to_deck(_deck2, cards.Sonic1);
-add_card_to_deck(_deck2, cards.Sonic1);
-add_card_to_deck(_deck2, cards.Sonic1);
-add_card_to_deck(_deck2, cards.Sonic1);
-add_card_to_deck(_deck2, cards.Sonic1);
-add_card_to_deck(_deck2, cards.Sonic1);
-add_card_to_deck(_deck2, cards.Sonic1);
-add_card_to_deck(_deck2, cards.Sonic1);
+add_card_to_deck(_deck2, cards.PlusTime1);
+add_card_to_deck(_deck2, cards.MinusTime1);
+add_card_to_deck(_deck2, cards.Speed1);
+add_card_to_deck(_deck2, cards.FireRate1);
+add_card_to_deck(_deck2, cards.SlowRate1);
+add_card_to_deck(_deck2, cards.Sabotage);
+
 
 _deck3 = instance_create_layer(0, 0, "ControllerInstances", obj_deck);
+add_card_to_deck(_deck3, cards.Bomber1);
+add_card_to_deck(_deck3, cards.Homing1);
+add_card_to_deck(_deck3, cards.Homing1);
 add_card_to_deck(_deck3, cards.Blaster1);
 add_card_to_deck(_deck3, cards.Sonic1);
-add_card_to_deck(_deck3, cards.Blaster1);
-add_card_to_deck(_deck3, cards.Sonic1);
-add_card_to_deck(_deck3, cards.Blaster1);
-add_card_to_deck(_deck3, cards.Sonic1);
-add_card_to_deck(_deck3, cards.Blaster1);
-add_card_to_deck(_deck3, cards.Sonic1);
-add_card_to_deck(_deck3, cards.Blaster1);
-add_card_to_deck(_deck3, cards.Sonic1);
+add_card_to_deck(_deck3, cards.MinusTime1);
+add_card_to_deck(_deck3, cards.Speed1);
+add_card_to_deck(_deck3, cards.FireRate1);
+add_card_to_deck(_deck3, cards.SlowRate1);
+add_card_to_deck(_deck3, cards.Sabotage);
 
 _deck4 = instance_create_layer(0, 0, "ControllerInstances", obj_deck);
+add_card_to_deck(_deck4, cards.Bomber1);
+add_card_to_deck(_deck4, cards.Homing1);
 add_card_to_deck(_deck4, cards.Blaster1);
 add_card_to_deck(_deck4, cards.Sonic1);
-add_card_to_deck(_deck4, cards.Blaster1);
 add_card_to_deck(_deck4, cards.Sonic1);
-add_card_to_deck(_deck4, cards.Blaster1);
-add_card_to_deck(_deck4, cards.Sonic1);
-add_card_to_deck(_deck4, cards.Blaster1);
-add_card_to_deck(_deck4, cards.Sonic1);
-add_card_to_deck(_deck4, cards.Blaster1);
-add_card_to_deck(_deck4, cards.Sonic1);
+add_card_to_deck(_deck4, cards.FireRate1);
+add_card_to_deck(_deck4, cards.SlowRate1);
+add_card_to_deck(_deck4, cards.Sabotage);
+add_card_to_deck(_deck4, cards.Sabotage);
+add_card_to_deck(_deck4, cards.Speed1);
 
 //Create deck selects
 

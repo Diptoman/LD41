@@ -14,7 +14,7 @@ if (_type == 1)
 if (_type == 2)
 {
 	text1 = "Boss Destroyed";
-	text2 = "Choose a card to add to deck.";
+	text2 = "Choose a card to add to hand.";
 	text3 = "";
 	text4 += "Boss Defeated: 2000\n";
 	text4 += "Time Bonus: " + string(floor(obj_controller._timer / 60)) + " x 100 = " + string(floor(obj_controller._timer/60) * 100) + "\n";

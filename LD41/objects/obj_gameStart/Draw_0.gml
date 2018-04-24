@@ -8,4 +8,6 @@ draw_set_color(c_white);
 	
 	draw_set_color(c_white);
 	draw_set_font(fnt_mainDeck);
-	draw_text_outline(room_width/2 , room_height/2, "Click anywhere to begin", 0, c_white, 0);
+	draw_text_outline(room_width/2 , room_height/2 + 24, "Click anywhere to begin\n\nCurrent High-Score: " + string(global.highscore), 0, c_white, 0);
+	
+	draw_sprite(spr_title, 0, 0, 0);

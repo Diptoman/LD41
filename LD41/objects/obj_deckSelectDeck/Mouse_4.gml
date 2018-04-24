@@ -10,3 +10,5 @@ for(i = 0; i < instance_number(obj_deckSelectDeck); i++)
 with (obj_initController) event_perform(ev_other, ev_user0);
 
 image_index = 1;
+
+audio_play_sound(snd_card, 10, 0);

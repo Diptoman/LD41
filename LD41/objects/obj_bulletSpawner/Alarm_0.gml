@@ -32,4 +32,6 @@ switch(_bulletObj)
 		break;
 }
 
+audio_play_sound(snd_shoot, 10, 0);
+
 instance_destroy();

@@ -14,5 +14,6 @@ if (_isActive == true)
 	draw_set_valign(fa_center);
 	draw_set_halign(fa_center);
 	draw_set_font(fnt_mainDeck);
-	draw_text_outline(room_width/2, room_height/2 - 100, "Final Score: " + string(obj_controller._score), 2, c_black, 4);
+	
+	draw_text_outline(room_width/2, room_height/2, text, 2, c_black, 4);
 }

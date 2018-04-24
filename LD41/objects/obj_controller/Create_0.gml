@@ -16,3 +16,6 @@ instance_create_layer(-367, 0, "OverlayUI", obj_leftSideUI);
 instance_create_layer(room_width + 367, 0, "OverlayUI", obj_rightSideUI);
 
 _roundIsGoingOn = false;
+
+audio_stop_all();
+audio_play_sound(snd_music, 10, 1);

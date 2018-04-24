@@ -19,3 +19,6 @@ ds_list_add(_stationPointsX, x);
 ds_list_add(_stationPointsY, y + 120);
 
 alarm[1] = 300 - floor(random(60));
+
+image_speed = 0;
+image_index = floor(random(5));

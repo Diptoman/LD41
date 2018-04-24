@@ -35,5 +35,7 @@ for(j = 0; j < instance_number(obj_roundStartEquippedCard); j++)
 	}
 }
 
+audio_play_sound(snd_card, 10, 0);
+
 instance_destroy();
 }

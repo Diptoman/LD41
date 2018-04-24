@@ -9,7 +9,7 @@ if (_isActive == true)
 	draw_text_outline(32 , 32, "Round " + string(obj_controller._round), 2, c_white, 4);
 	draw_set_color(c_white);
 	draw_set_font(fnt_mainText);
-	draw_text(32, 104, "Choose cards to equip from your hand.\nAll card effects stack.\nOne card is drawn per turn.\nCards your enemy has equipped are shown.\nClick okay once done.");
+	draw_text(32, 104, "Click on cards to equip from your hand.\nAll card effects stack.\nOne card is drawn per turn.\nCards your enemy has equipped are shown.\nClick okay once done to enter play area.");
 	draw_set_color(make_color_rgb(229, 255, 252));
 	draw_set_font(fnt_main);
 	draw_text_outline(28, room_height - 80, "Hand", 2, c_black, 4);
